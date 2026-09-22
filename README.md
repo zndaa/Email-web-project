@@ -1,59 +1,36 @@
-# Emailclient
+# 📬 Modern Web Email Client
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.3.
+A full-featured, responsive email web application built with modern web technologies. This client allows users to register, authenticate securely, manage incoming correspondence, compose and send emails to other users, inspect incoming message details, and quickly reply to conversations.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🌟 Key Features
 
-```bash
-ng serve
-```
+* **Authentication & User Management:**
+  * User sign-up and custom email account creation.
+  * Secure sign-in / sign-out flows with persistent session handling.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* **Inbox & Message Management:**
+  * Dynamic inbox interface displaying received messages with real-time status.
+  * Detailed message inspection view showing sender details, subject, timestamps, and full formatted body content.
 
-## Code scaffolding
+* **Send & Reply Capabilities:**
+  * Compose and dispatch emails to any registered user within the system.
+  * In-app reply functionality pre-filling sender addresses and subject threads.
+  * Client-side form validations ensuring valid email recipients and non-empty inputs.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+* **Responsive User Interface:**
+  * Clean, modular layout designed for both desktop and mobile screens.
+  * Interactive navigation transitions between folders, message previews, and modal composers.
 
-```bash
-ng generate component component-name
-```
+---
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🛠️ Built With
 
-```bash
-ng generate --help
-```
+* **Frontend Framework:** Angular
+* **Language:** TypeScript, HTML5, SCSS / CSS3
+* **State & Asynchronous Data:** RxJS
+* **HTTP Client:** Angular HttpClient (REST API Integration)
+* **Code Quality & Tooling:** Angular CLI, Prettier, ESLint
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
