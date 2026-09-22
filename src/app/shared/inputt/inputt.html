@@ -1,0 +1,34 @@
+<div class="field">
+  <label>{{ label }}</label>
+  <input [type]="inputType" [formControl]="control" />
+
+  @if (showErrors()) {
+    <div class="ui pointing red basic label">
+      
+      @if (control.errors?.['required']) {
+        <p>Value is required</p>
+      }
+
+      @if (control.errors?.['minlength']) {
+        <p>
+          Value entered is {{ control.errors?.['minlength']?.actualLength }} 
+          characters long but it must be at least 
+          {{ control.errors?.['minlength']?.requiredLength }}
+        </p>
+      }
+
+      @if (control.errors?.['maxlength']) {
+        <p>
+          Value entered is {{ control.errors?.['maxlength']?.actualLength }} 
+          characters long but it must be at most 
+          {{ control.errors?.['maxlength']?.requiredLength }}
+        </p>
+      }
+
+      @if (control.errors?.['noConnection']) {
+        <p>Can't tell</p>
+      }
+
+    </div>
+  }
+</div>

@@ -1,0 +1,23 @@
+<div class="ui celled list">
+  
+  @for (email of emails; track email.id) {
+    <div class="item">
+      <a [routerLink]="email.id" routerLinkActive="active">
+        <div class="content">
+          
+          <div class="header trim">
+            {{ email.subject }}
+          </div>
+          
+          <p class="trim">
+            {{ email.from }}
+          </p>
+
+        </div>
+      </a>
+    </div>
+  }@empty {
+  <p>Henüz hiç e-posta yok.</p>
+}
+
+</div>

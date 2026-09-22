@@ -1,0 +1,15 @@
+<button (click)="showModal = true" class="ui button inverted primary fluid">
+  Compose
+</button>
+
+@if (showModal) {
+  <app-modal (dismiss)="showModal = false">
+    <div modalTitle>Compose</div>
+  
+    <app-emailform 
+      (emailSubmit)="onSubmit($event)" 
+      [email]="email"
+    ></app-emailform>
+
+  </app-modal>
+}

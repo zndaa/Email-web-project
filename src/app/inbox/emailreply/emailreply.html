@@ -1,0 +1,15 @@
+<button (click)="showModal = true" class="ui button primary">
+  Reply
+</button>
+
+@if (showModal) {
+  <app-modal (dismiss)="showModal = false">
+    <div modalTitle>Reply</div>
+    
+    <app-emailform 
+      [email]="email" 
+      (emailSubmit)="onSubmit($event)"
+    ></app-emailform>
+
+  </app-modal>
+}
